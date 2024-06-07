@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+    id="cordova-plugin-remove-storage-permissions" version="1.0.1">
+
+    <name>Remove Storage Permissions</name>
+    <description>Remove READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE from AndroidManifest.xml.</description>
+    <license>MIT</license>
+
+    <keywords>Remove, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE</keywords>
+    <repo>https://github.com/StreamITOS/cordova-plugin-remove-storage-permissions.git</repo>
+  
+    <engines>
+            <engine name="cordova" version=">=6.4.0"/>
+            <engine name="cordova-android" version=">=6.0.0"/>
+    </engines>
+  
+    <platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+                <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove"/>
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove"/>
+        </config-file>
+
+    </platform>
+
+</plugin>

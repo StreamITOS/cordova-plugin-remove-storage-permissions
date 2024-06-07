@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-remove-storage-permissions",
+  "version": "1.0.1",
+  "description": "A Cordova plugin to remove Storage Permissions",
+  "cordova": {
+    "id": "cordova-plugin-remove-storage-permissions",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StreamITOS/cordova-plugin-remove-storage-permissions.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.4.0"
+    }
+  ],
+  "author": "StreamITOS",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/StreamITOS/cordova-plugin-remove-storage-permissions"
+}
